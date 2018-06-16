@@ -10,298 +10,353 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-  
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <div id="loading-wrapper">
-        <div id="loading">
-            <div id="loading-loading2"></div>
-        </div>
-        <div class="loadingScreen left"></div>
-        <div class="loadingScreen right"></div>
-    </div>
+<body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top ">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Amy McIntyre</a>
+        <div id="loading-wrapper">
+                <div id="loading">
+                    <div id="loading-loading2"></div>
+                </div>
+                <div class="loadingScreen left"></div>
+                <div class="loadingScreen right"></div>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-            <li><a href="#aboutme"><span class="glyphicon glyphicon-user"></span> About</a></li>
-            <li><a href="#accomplishments"><span class="glyphicon glyphicon-education"></span> Accomplishments</a></li>
-            <li><a href="#Profile"><span class="glyphicon glyphicon-folder-open"></span> Profile</a></li>
-            <li><a href="#" id="mainbutton"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+        
+<nav class="navbar navbar-inverse navbar-fixed-top " >
+    <div class="container-fluid" >
+        <div class="navbar-header">
+            <a class="navbar-brand"  style="color: black;" href="#accomplishments">Amy McIntyre</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right" >
+            <li><a href="#hero-image" id="navbar-Hover" ><span class="glyphicon glyphicon-home" ></span> Home</a></li>
+            <li><a href="#aboutme" id="navbar-Hover"><span class="glyphicon glyphicon-user"></span> About</a></li>
+            <li><a href="#accomplishments" id="navbar-Hover"><span class="glyphicon glyphicon-education"></span> Accomplishments</a></li>
+            <li><a href="#Profile" id="navbar-Hover"><span class="glyphicon glyphicon-folder-open"></span> Profile</a></li>
+        </ul>
+    </div>
+</nav> 
+
+<div class="phone-Nav">
+    <nav class="navbar navbar-inverse" >
+        <div class="container-fluid" >
+            <div class="navbar-header">
+                <a class="navbar-brand"  style="color: black;" href="#">Amy McIntyre</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right" >
+            <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Menu</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#hero-image">Home</a>
+                        <a href="#aboutme">About</a>
+                        <a href="#accomplishments1">Accomplishments</a>
+                        <a href="#Profile-Phone">Profile</a>
+                    </div>
+                    </div> 
             </ul>
         </div>
     </nav> 
+</div>
 
 
-    <div class="parallax">
-        <div class="caption">
-            <span class="border">There is no better feeling than accomplishment</span>
+
+
+<div id="hero-image" class="hero-image">
+    <div class="hero-text">
+        <h1 class="herotext">  There is no better feeling than accomplishment</h1>
+    </div>
+</div>
+        
+<div id="aboutme">
+    <div class="page-header">
+        <h1>About Me<br> <small>Who I am and what I want</small></h1>
+        <img class="img-responsive" src="images/profileimage.jpg" alt="AmyMcIntyre">
+        <h1 class="name">Amy McIntyre</h1>
+        <div class="aboutmeDIV">
+            <p class="aboutmeP">
+                I have always had a passion for IT. At school computing was always my favourite class. 
+                Achieving top year student in IT for my last 2 years in college. I considered IT to be 
+                my hobby but after studying IT and now 2 months away from completing my degree I realised
+                my hobby can also be my career and to be honest what better career could you have.
+                I would take ownership of any position I hold, and I know I will be an asset to any 
+                employer who will be guaranteed my total commitment and focus. I am a very hard worker 
+                and consider myself to be very reliable, trustworthy and keen to learn about any 
+                industry I am in and to improve my skills. During my years of study, I have learnt
+                HTML, CSS, Bootstrap, PHP and JavaScript. I have been learning more about JavaScript
+                in my last year and learning about XML, jQuery and Ajax.
+            </p>
         </div>
     </div>
+</div>
 
-    <div id="aboutme">
-        <div class="page-header">
-            <h1>About Me<br> <small>Who I am and what I want</small></h1>
-            <img class="img-responsive" src="images/profileimage.jpg" alt="AmyMcIntyre">
-            <h1 class="name">Amy McIntyre</h1>
-            <div class="aboutmeDIV">
-                <p class="aboutmeP">
-                        I have always had a passion for IT. At school computing was always my favourite class. 
-                        Achieving top year student in IT for my last 2 years in college. I considered IT to be 
-                        my hobby but after studying IT and now 2 months away from completing my degree I realised
-                        my hobby can also be my career and to be honest what better career could you have.
-                        I would take ownership of any position I hold, and I know I will be an asset to any 
-                        employer who will be guaranteed my total commitment and focus. I am a very hard worker 
-                        and consider myself to be very reliable, trustworthy and keen to learn about any 
-                        industry I am in and to improve my skills. During my years of study, I have learnt
-                        HTML, CSS, Bootstrap, PHP and JavaScript. I have been learning more about JavaScript
-                        in my last year and learning about XML, jQuery and Ajax.
-                        
 
-                </p>
+<div id="accomplishments">
+    <div class="page-header">
+        <h1>My Accomplishments<br> <small>My hard work paid off. Hover to reveal grades</small></h1>
+        <br>  
+        <br>  
+        <h1 class="name">Tauranga Girls College</h1>
+        <div class="row">
+            <div class="col-3 col3"></div>
+            <div class="col-3 col3">
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <img class="image1" src="images/11.jpg" alt="Level3">  
+                        </div>
+                        <div class="back">
+                            <h1>Top Year 11 Student in Computing</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3 col3">
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                            <img class="image1" src="images/12.jpg" alt="Level3">  
+                        </div>
+                        <div class="back">
+                            <h1>Top Year 11 Student in Computing</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-        
-    <div id="accomplishments">
-        <div class="page-header">
-            <h1>My Accomplishments<br> <small>My hard work paid off. Hover to reveal grades</small></h1>
-            <br>  
-            <br>  
-            <h1 class="name">Tauranga Girls College</h1>
-                <p class="aboutmeP">
-                    <div class="row">
-                        <div class="col-md-3"> </div>
-                            <div class="col-md-3">
-                                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <img class="img-responsive-two" src="images/11.jpg" alt="AmyMcIntyre">
-                                        </div>
-                                        <div class="back">
-                                            <h1>Top Year 11 Student in Computing</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">                                        
-                                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                    <div class="flipper">
-                                        <div class="front">
-                                            <img class="img-responsive-two" src="images/12.jpg" alt="AmyMcIntyre">
-                                        </div>
-                                        <div class="back">
-                                            <h1>Top Year 12 Student in Computing</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
+
+    <h1 class="name">Polytechnic/University</h1>
+    <div class="row">
+        <div class="col-3 col3">
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <img class="image1" src="images/level3.jpg" alt="Level3">  
                     </div>
-                </p>
-                <br>  
-                <br>  
-            <h1 class="name">Polytechnic/University</h1>
-                <p class="aboutmeP">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper">
-                                    <div class="front">
-                                            <img class="img-responsive-two" src="images/level3.jpg" alt="AmyMcIntyre">
-                                    </div>
-                                    <div class="back">
-                                        <h4>Certificate in Computing Level 3</h4>
-                                            <table class="table" width="100%" >
-                                                <tr style="text-align:center">
-                                                    <th>Paper</th>
-                                                    <th>Final Mark</th>
-                                                    <th>Final Result</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Email and Internet</th>
-                                                    <th>100%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Hardware and Software</th>
-                                                    <th>98%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Networks</th>
-                                                    <th>95%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Multimedia</th>
-                                                    <th>100%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Programming</th>
-                                                    <th>100%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Business</th>
-                                                    <th>100%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Project Management</th>
-                                                    <th>100%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Professional Practice</th>
-                                                    <th>100%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Working collaboratively</th>
-                                                    <th>100%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                            </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">                                        
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper">
-                                    <div class="front">
-                                            <img class="img-responsive-two" src="images/level5.jpg" alt="AmyMcIntyre">
-                                    </div>
-                                    <div class="back">
-                                        <h4>Diploma in Applied Computing Level 5</h4>
-                                        <table class="table" width="100%" >
-                                            <tr style="text-align:center">
-                                                <th>Paper</th>
-                                                <th>Final Mark</th>
-                                                <th>Final Result</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Statistis</th>
-                                                <th>64%</th>
-                                                <th>B-</th>
-                                            </tr>
-                                            <tr>
-                                                <th>IT Infrastructure</th>
-                                                <th>83%</th>
-                                                <th>A</th>
-                                            </tr>
-                                            <tr>
-                                                <th>IT Essentials</th>
-                                                <th>88%</th>
-                                                <th>A+</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Professional Skills</th>
-                                                <th>85%</th>
-                                                <th>A+</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Software Packages</th>
-                                                <th>97%</th>
-                                                <th>A+</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Multimedia</th>
-                                                <th>92%</th>
-                                                <th>A+</th>
-                                            </tr>
-                                            <tr>
-                                                <th>Programming</th>
-                                                <th>79%</th>
-                                                <th>A-</th>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">                                        
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper">
-                                    <div class="front">
-                                            <img class="img-responsive-two" src="images/level6.jpg" alt="AmyMcIntyre">
-                                    </div>
-                                    <div class="back">
-                                        <h4>Diploma in Applied Computing Level 6</h4>
-                                        <table class="table" width="100%" >
-                                                <tr style="text-align:center">
-                                                    <th>Paper</th>
-                                                    <th>Final Mark</th>
-                                                    <th>Final Result</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Database Practice</th>
-                                                    <th>72%</th>
-                                                    <th>B+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Advanced Programming</th>
-                                                    <th>99%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Web Development</th>
-                                                    <th>95%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>GUI Programming</th>
-                                                    <th>88%</th>
-                                                    <th>A+</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Applied Management</th>
-                                                    <th>78%</th>
-                                                    <th>A</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Business Systems</th>
-                                                    <th>82%</th>
-                                                    <th>A</th>
-                                                </tr>
-                                            </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">                                        
-                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-                                <div class="flipper">
-                                    <div class="front">
-                                            <h1>Coming June 2018</h1>
-                                    </div>
-                                    <div class="back">
-                                        <h1>Bachelor in Computer Science</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                    
+                    <div class="back">
+                        <h4>Certificate in Computing Level 3</h4>
+                    <table class="table" width="100%" >
+                        <tr style="text-align:center">
+                            <th>Paper</th>
+                            <th>Final Mark</th>
+                            <th>Final Result</th>
+                        </tr>
+                        <tr>
+                            <th>Email and Internet</th>
+                            <th>100%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Hardware and Software</th>
+                            <th>98%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Networks</th>
+                            <th>95%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Multimedia</th>
+                            <th>100%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Programming</th>
+                            <th>100%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Business</th>
+                            <th>100%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Project Management</th>
+                            <th>100%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Professional Practice</th>
+                            <th>100%</th>
+                            <th>A+</th>
+                        </tr>
+                            <tr>
+                            <th>Working collaboratively</th>
+                            <th>100%</th>
+                            <th>A+</th>
+                        </tr>
+                    </table>
+                    </div>
                 </div>
-<br>     
-<br>  
-<br>  
-<br>     
-<br>  
-<br>  
-<br>  
-<br>                                 
-<br>  
-<br>  
+            </div>
+        </div>
+
+    <div class="col-3 col3">                                        
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                    <img class="image1" src="images/level5.jpg" alt="Level3">  
+                </div>
+                <div class="back">
+                    <h4>Diploma in Applied Computing Level 5</h4>
+                    <table class="table" width="100%" >
+                        <tr style="text-align:center">
+                            <th>Paper</th>
+                            <th>Final Mark</th>
+                            <th>Final Result</th>
+                        </tr>
+                        <tr>
+                            <th>Statistis</th>
+                            <th>64%</th>
+                            <th>B-</th>
+                        </tr>
+                        <tr>
+                            <th>IT Infrastructure</th>
+                            <th>83%</th>
+                            <th>A</th>
+                        </tr>
+                        <tr>
+                            <th>IT Essentials</th>
+                            <th>88%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Professional Skills</th>
+                            <th>85%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Software Packages</th>
+                            <th>97%</th>
+                            <th>A+</th>
+                        </tr>
+                            <tr>
+                            <th>Multimedia</th>
+                            <th>92%</th>
+                            <th>A+</th>
+                        </tr>
+                            <tr>
+                            <th>Programming</th>
+                            <th>79%</th>
+                            <th>A-</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="col-3 col3">                                        
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                    <img class="image1" src="images/level6.jpg" alt="Level3">  
+                </div>
+                <div class="back">
+                    <h4>Diploma in Applied Computing Level 6</h4>
+                    <table class="table" width="100%" >
+                        <tr style="text-align:center">
+                            <th>Paper</th>
+                            <th>Final Mark</th>
+                            <th>Final Result</th>
+                        </tr>
+                        <tr>
+                            <th>Database Practice</th>
+                            <th>72%</th>
+                            <th>B+</th>
+                        </tr>
+                        <tr>
+                            <th>Advanced Programming</th>
+                            <th>99%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Web Development</th>
+                            <th>95%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>GUI Programming</th>
+                            <th>88%</th>
+                            <th>A+</th>
+                        </tr>
+                        <tr>
+                            <th>Applied Management</th>
+                            <th>78%</th>
+                            <th>A</th>
+                        </tr>
+                        <tr>
+                            <th>Business Systems</th>
+                            <th>82%</th>
+                            <th>A</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3 col3">                                        
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                    <h1>Coming June 2018</h1>
+                </div>
+                <div class="back">
+                    <h1>Bachelor in Computer Science</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+                
+    </div>
+</div>
 
-    <div id="Profile">
+<div id="accomplishments1" class="accomplishments-tablet">
+    <div class="page-header">
+        <h1 class="phone">My Accomplishments<br> <small>My hard work paid off.</small></h1>
+        <br>  
+        <br>  
+        <h1 class="name">Tauranga Girls College</h1>
+        <div class="row">
+            <div class="col-3 col3">
+            <img class="image1" src="images/11.jpg" alt="Level3">  
+            <h4>Top Year 11 Student in Computing</h4>
+            </div>
+
+            <div class="col-3 col3">
+            <img class="image1" src="images/12.jpg" alt="Level3">  
+            <h4>Top Year 12 Student in Computing</h4>
+            </div>
+        </div>
+       
+
+        <h1 class="phone2">Polytechnic/University</h1>
+        <div class="row">
+            <div class="col-3 col3">
+                <img class="image1" src="images/level3.jpg" alt="Level3">  
+                <h4>Certificate in Computing Level 3</h4>
+            </div>
+
+            <div class="col-3 col3"> 
+                <img class="image1" src="images/level5.jpg" alt="Level3">  
+                <h4>Diploma in Applied Computing Level 5</h4>
+            </div>
+
+            <div class="col-3 col3">   
+                <img class="image1" src="images/level6.jpg" alt="Level3">  
+                <h4>Diploma in Applied Computing Level 6</h4>
+            </div>
+
+            <div class="col-3 col3"> 
+                <h1>Coming June 2018</h1>
+                <h1>Bachelor in Computer Science</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<div id="Profile">
     <div class="page-header">
     <br>
     <div class="row">
@@ -316,9 +371,9 @@
                         of a highly motivated team that strives for superior service and 
                         exceeds all goals. With my positive attitude and career commitment
                          I know that I will asset to your business.
-                            <br>
-                            I am currently studying at the University of Waikato finishing my Bachelor in Computer Science Degree.
-                            I am constantly keeping myself up to date with the IT Industry and where it will go in the future.
+                        <br>
+                        I am currently studying at the University of Waikato finishing my Bachelor in Computer Science Degree.
+                        I am constantly keeping myself up to date with the IT Industry and where it will go in the future.
                     </p>
                 </div>
             </section>
@@ -388,6 +443,109 @@
                 <div class="box2">
                 <h2 class="name">Achievements and Education</h2>
                 <p class="aboutmeP">
+                    - Achieved NCEA level one with 119 credits<br>
+                    - Top Year 11 student 2013 for Computing<br>
+                    - Achieved NCEA level two with 120 credits<br>
+                    - Top Year 12 student 2014 for Computing <br>
+                    - Passed with Merit - Certificate in Computing at BOP Polytechnic 2015<br>
+                    - Diploma in Applied Computing Level 5 at BOP Polytechnic 2016<br>
+                    - Diploma in Applied Computing Level 6 at BOP Polytechnic 2017<br>
+                    - Bachelor in Computer Science Waikato University (Due for Completion June 2018)<br>
+                </p>
+                </div>
+            </section>
+        </div>  
+    </div>
+    </div>
+</div>
+
+
+<div id="Profile-Phone" class="Profile-Phone">
+    <div class="page-header">
+    <h1 >My Personal Profile<br> <small>My Objective, Skills and Strengths</small></h1>
+    <br>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="name">Career Objective</h2>
+            <div class="aboutmeDIV1">
+                <p class="aboutmeP1">
+                    I am self-motived, ambitious and always keen to learn new things. 
+                    My career objective is to be employed by an IT company that will 
+                    lead the market and be the worlds best. I would like to be part 
+                    of a highly motivated team that strives for superior service and 
+                    exceeds all goals. With my positive attitude and career commitment
+                    I know that I will asset to your business.
+                    <br>
+                    I am currently studying at the University of Waikato finishing my Bachelor in Computer Science Degree.
+                    I am constantly keeping myself up to date with the IT Industry and where it will go in the future.
+                </p>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="box2">
+                <h2 class="name">Skills</h2>
+                <div class="aboutmeDIV1">
+                    <p class="aboutmeP1">
+                        I have excellent computer skills and was the top year 11 student 
+                        in 2013 and top year 12 student in 2014 for computing at Tauranga 
+                        Girls College. I am passionate, confident, and enjoy every aspect 
+                        of Web Design. I am experienced in HTML, CSS, Bootstrap, PHP and 
+                        JavaScript and have achieved over 90% in all of my papers. 
+                        My favourite papers are always Multimedia and Web design. 
+                        Also, I have studied C Programming at 
+                        the polytechnic in my level 3 paper which I enjoyed as 
+                        I thrive on the satisfaction and excitement of solving a
+                        problem within a program. I have studied C# which I feel very 
+                        confident in which I studied in my level 6 and 7 papers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div  class="row">
+        <div class="col-12">
+                <div class="box">
+                <h2 class="name">Strenths</h2>
+                <div class="aboutmeDIV1">
+                    <p class="aboutmeP1">
+                        -Customer Service<br>
+                        This is very important to me, as I like to offer customers the best customer 
+                        service to ensure they get the best experience and to create long term customer
+                            relationships. I know the key to any successful business is superior 
+                        and excellent customer service. I am able to work under pressure and 
+                        getting tasks set to me completed on time while exceeding the customers 
+                        expectations.
+                        <br>
+                        <br>
+                        -Initiative<br>
+                        I always take it upon myself to get my work done while also getting it 
+                        completed to a high standard. I am always planning ahead to keep everything 
+                        on track and while using my open mind and thinking outside the box 
+                        I am often able to offer other options than the original task.
+                        <br>
+                        <br>
+                        -Team Player<br>
+                        I enjoy being in a hardworking team environment and are constantly aware
+                        when others need assistance or under pressure and need help. Leading by 
+                        example, giving support and open communication builds a high performing team. 
+                        I know my commitment will be valued by your company as you would soon know 
+                        that you can always rely on me to give 120%.
+
+                        For the last 2 years I have also been nominated by my class mates to be 
+                        student rep where I was the voice of the students for the IT department. 
+                        This required me meet with tutors to ensure the programs were running smoothly.
+                    </p>
+                </div>
+                </div>
+        </div>
+            
+        <div class="col-12">          
+                <div class="box2">
+                <h2 class="name">Achievements and Education</h2>
+                <div class="aboutmeDIV1">
+                    <p class="aboutmeP1">
                         - Achieved NCEA level one with 119 credits<br>
                         - Top Year 11 student 2013 for Computing<br>
                         - Achieved NCEA level two with 120 credits<br>
@@ -396,31 +554,34 @@
                         - Diploma in Applied Computing Level 5 at BOP Polytechnic 2016<br>
                         - Diploma in Applied Computing Level 6 at BOP Polytechnic 2017<br>
                         - Bachelor in Computer Science Waikato University (Due for Completion June 2018)<br>
-                </p>
+                    </p>
                 </div>
-            </section>
+                </div>
         </div>  
+        <footer class="footer-phone">
+            <div class="card">
+        <h1 class="title">How to Contact Me</h1>
+        <h4>Email: amymac640@gmail.com</h4>
+        <h4>linkedin: www.linkedin.com/in/amy-mcintyre-a61566105</h4>
+      </div>
+        </footer>
     </div>
     </div>
-    </div>
+</div>
 
 
-    
-    <div id="mainmodal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1 class="title">Contact Me</h1>
-                <img class="img-responsive" src="images/profileimage.jpg" alt="AmyMcIntyre">
-                    <div class="panel panel-default">
-                            <div class="panel-body">
-                                <h3> Contact Details</h3>
-                                <h5>Name: Amy McIntyre</h5>
-                                <h5>Email: amymac640@gmail.com</h5>
-                            </div>
-                    </div>
-            </div>
-    </div>        
+      
+<footer class="footer-desktop">
+     <div class="card">
+        <h1 class="title">How to Contact Me</h1>
+        <h4>Email: amymac640@gmail.com</h4>
+        <h4>linkedin: www.linkedin.com/in/amy-mcintyre-a61566105</h4>
+      </div>
+</footer>
     <script type="text/javascript" src="js/scripts.js"></script>
-  </body>
+</body>
+
+
 
 </html>
+  
