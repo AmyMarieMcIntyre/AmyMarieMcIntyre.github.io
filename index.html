@@ -2,8 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="main.css"/>
-    <link rel="stylesheet" type="text/css" href="css/loading.css"/>
-    <link rel="stylesheet" type="text/css" href="css/profile.css"/>
+    <link rel="stylesheet" type="text/css" href="loading.css"/>
+    <link rel="stylesheet" type="text/css" href="profile.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,44 +21,25 @@
                 <div class="loadingScreen right"></div>
             </div>
         
-<nav class="navbar navbar-inverse navbar-fixed-top " >
-    <div class="container-fluid" >
-        <div class="navbar-header">
-            <a class="navbar-brand"  style="color: black;" href="#accomplishments">Amy McIntyre</a>
-        </div>
-        <ul class="nav navbar-nav navbar-right" >
-            <li><a href="#hero-image" id="navbar-Hover" ><span class="glyphicon glyphicon-home" ></span> Home</a></li>
-            <li><a href="#aboutme" id="navbar-Hover"><span class="glyphicon glyphicon-user"></span> About</a></li>
-            <li><a href="#accomplishments" id="navbar-Hover"><span class="glyphicon glyphicon-education"></span> Accomplishments</a></li>
-            <li><a href="#Profile" id="navbar-Hover"><span class="glyphicon glyphicon-folder-open"></span> Profile</a></li>
-        </ul>
-    </div>
-</nav> 
 
-<div class="phone-Nav">
-    <nav class="navbar navbar-inverse" >
-        <div class="container-fluid" >
-            <div class="navbar-header">
-                <a class="navbar-brand"  style="color: black;" href="#">Amy McIntyre</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right" >
-            <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Menu</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#hero-image">Home</a>
-                        <a href="#aboutme">About</a>
-                        <a href="#accomplishments1">Accomplishments</a>
-                        <a href="#Profile-Phone">Profile</a>
-                    </div>
-                    </div> 
-            </ul>
-        </div>
-    </nav> 
-</div>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
 
-
-
-
+                    <a class="navbar-brand" href="#hero-image">Amy McIntyre's Online Resume</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#hero-image" id="navbar-Hover" ><span class="glyphicon glyphicon-home" ></span> Home</a></li>
+                        <li><a href="#aboutme" id="navbar-Hover"><span class="glyphicon glyphicon-user"></span> About</a></li>
+                        <li><a href="#accomplishment" id="navbar-Hover"><span class="glyphicon glyphicon-education"></span> Accomplishments</a></li>
+                        <li><a href="#profile" id="navbar-Hover"><span class="glyphicon glyphicon-folder-open"></span> Profile</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>      
+              
+              
 <div id="hero-image" class="hero-image">
     <div class="hero-text">
         <h1 class="herotext">  There is no better feeling than accomplishment</h1>
@@ -68,7 +49,7 @@
 <div id="aboutme">
     <div class="page-header">
         <h1>About Me<br> <small>Who I am and what I want</small></h1>
-        <img class="img-responsive" src="images/profileimage.jpg" alt="AmyMcIntyre">
+        <img class="img-responsive" src="images/grad.jpg" alt="AmyMcIntyre">
         <h1 class="name">Amy McIntyre</h1>
         <div class="aboutmeDIV">
             <p class="aboutmeP">
@@ -88,7 +69,7 @@
 </div>
 
 
-<div id="accomplishments">
+<div id="accomplishment">
     <div class="page-header">
         <h1>My Accomplishments<br> <small>My hard work paid off. Hover to reveal grades</small></h1>
         <br>  
@@ -123,6 +104,20 @@
             </div>
         </div>
     </div>
+
+    <div class="breaks">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
 
 
     <h1 class="name">Polytechnic/University</h1>
@@ -200,8 +195,8 @@
                 </div>
                 <div class="back">
                     <h4>Diploma in Applied Computing Level 5</h4>
-                    <table class="table" width="100%" >
-                        <tr style="text-align:center">
+                    <table style="text-align: center" class="table" width="100%" >
+                        <tr>
                             <th>Paper</th>
                             <th>Final Mark</th>
                             <th>Final Result</th>
@@ -299,7 +294,7 @@
         <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class="flipper">
                 <div class="front">
-                    <h1>Coming June 2018</h1>
+                    <h1>Achieved August 2018</h1>
                 </div>
                 <div class="back">
                     <h1>Bachelor in Computer Science</h1>
@@ -309,9 +304,11 @@
     </div>
                 
     </div>
+
+
 </div>
 
-<div id="accomplishments1" class="accomplishments-tablet">
+<div id="accomplishment1" class="accomplishments-tablet">
     <div class="page-header">
         <h1 class="phone">My Accomplishments<br> <small>My hard work paid off.</small></h1>
         <br>  
@@ -348,15 +345,33 @@
             </div>
 
             <div class="col-3 col3"> 
-                <h1>Coming June 2018</h1>
-                <h1>Bachelor in Computer Science</h1>
+                <H2>Achieved August 2018</H2>
+                <h4>Bachelor in Computer Science</h4>
             </div>
         </div>
     </div>
 </div>
 
+<div class="breaks2">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</div>
     
-<div id="Profile">
+<div id="profile">
     <div class="page-header">
     <br>
     <div class="row">
@@ -460,7 +475,7 @@
 </div>
 
 
-<div id="Profile-Phone" class="Profile-Phone">
+<div id="profilephone" class="Profile-Phone">
     <div class="page-header">
     <h1 >My Personal Profile<br> <small>My Objective, Skills and Strengths</small></h1>
     <br>
@@ -578,7 +593,8 @@
         <h4>linkedin: www.linkedin.com/in/amy-mcintyre-a61566105</h4>
       </div>
 </footer>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
 </body>
 
 
